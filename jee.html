@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jee</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        
+        .header {
+            background-color: #ffc107;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+            font-weight: bold;
+            overflow: hidden;
+        }
+        
+        .header-text {
+            display: inline-block;
+            white-space: nowrap;
+            animation: move 10s linear infinite;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: translateX(100%);
+            }
+            
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .tab {
+            margin: 0 10px;
+            padding: 5px 15px;
+            cursor: pointer;
+            background-color: #000;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        
+        .tab.active {
+            background-color: #fff;
+            color: #000;
+            border: 1px solid #000;
+        }
+        
+        .content-list {
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .item {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px;
+            text-decoration: none;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        
+        .item-number {
+            width: 30px;
+            height: 30px;
+            background-color: #ffc107;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        .item-title {
+            font-size: 1em;
+            color: #333;
+        }
+        
+        .sub-links {
+            display: none;
+            margin-left: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .sub-links a {
+            display: block;
+            background: #fff;
+            padding: 8px;
+            margin: 5px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            color: black;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .sub-links a:hover {
+            background-color: #ffc107;
+        }
+        
+        @media (max-width: 400px) {
+            .content-list {
+                padding: 10px;
+            }
+            
+            .item {
+                padding: 8px;
+            }
+            
+            .item-number {
+                width: 25px;
+                height: 25px;
+                font-size: 0.9em;
+            }
+            
+            .item-title {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="header-text">jee</div>
+    </div>
+    
+    <div class="tabs">
+        <div class="tab active">Content</div>
+        <div class="tab">Description</div>
+        <div class="tab">FAQ</div>
+        <div class="tab">Fbt</div>
+    </div>
+    
+    <div class="content-list">
+        <a href="https://www.selfstudys.com/page/jee-main-study-material" class="item">
+            <div class="item-number">1</div>
+            <div class="item-title">Course Information and Syllabus</div>
+        </a>
+        
+        
+        <a href="https://t.me/+2Noav-to7aVmZmM1" class="item">
+            <div class="item-number">2</div>
+            <div class="item-title">PRAYAS JEE 1.0 2026 BATCH</div>
+        </a>
+        
+        <!-- Physics -->
+        <div class="item" onclick="toggleSection('physicsLinks')">
+            <div class="item-number">3</div>
+            <div class="item-title">Physics</div>
+        </div>
+        
+        <div id="physicsLinks" class="sub-links">
+            <a href="https://example.com/physics1" target="_blank">Physics Link 1</a>
+            <a href="https://example.com/physics2" target="_blank">Physics Link 2</a>
+            <a href="https://drive.google.com/drive/folders/1YeRTXql_GRpi8CocjyMmm8UP59qqIP8E" target="_blank">cengage physics</a>
+        </div>
+        
+        <!-- Chemistry -->
+        <div class="item" onclick="navigateTo('content1_4.html')">
+            <div class="item-number">4</div>
+            <div class="item-title">Chemistry</div>
+        </div>
+        
+        <!-- Math -->
+        <div class="item" onclick="navigateTo('content1_5.html')">
+            <div class="item-number">5</div>
+            <div class="item-title">MATH</div>
+        </div>
+        <a href="https://www.selfstudys.com/page/jee-main-study-material" class="item">
+            <div class="item-number">6</div>
+            <div class="item-title">SELFSTUDYS NOTES</div>
+        </a>
+        
+        <!-- DRIVE NOTES -->
+        <div class="item" onclick="toggleSection('driveNotesLinks')">
+            <div class="item-number">7</div>
+            <div class="item-title">DRIVE NOTES</div>
+        </div>
+        
+        <div id="driveNotesLinks" class="sub-links">
+            <a href="https://drive.google.com/drive/folders/167_LJtN3QiTpD2f3lSTf0WirnjfRlEwg" target="_blank">JEE LIBRARY</a>
+            <a href="https://drive.google.com/drive/folders/1M5QZQ7UPRz1TwAgNdJkXvQ8JivgPYDWl" target="_blank">ARJUNA MODULES</a>
+            
+            <a href="https://drive.google.com/drive/folders/1dQMhfn290NP45IHSiq9RnciAty38VCyS" target="_blank">Allen booster sheets</a>
+            <a href="https://drive.google.com/drive/folders/10CRREu4-onPmTw4e3l1wuOpG3IEa3urn" target="_blank">ALLEN</a>
+            <a href="https://drive.google.com/link3" target="_blank">Drive Note 3</a>
+            
+        </div>
+        
+    </div>
+    
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+        
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+        
+        function toggleSection(id) {
+            const element = document.getElementById(id);
+            element.style.display =
+                element.style.display === "block" ? "none" : "block";
+        }
+    </script>
+    
+</body>
+
+</html>

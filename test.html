@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Links</title>
+    <style>
+        .links {
+            display: none;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            margin: 5px 0;
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="toggleLinks('box1')">Button 1</button>
+<div id="box1" class="links">
+    <a href="https://www.google.com" target="_blank">Link 1</a>
+    <a href="https://www.youtube.com" target="_blank">Link 2</a>
+</div>
+
+<button onclick="toggleLinks('box2')">Button 2</button>
+<div id="box2" class="links">
+    <a href="https://www.facebook.com" target="_blank">Link 1</a>
+    <a href="https://www.instagram.com" target="_blank">Link 2</a>
+    <a href="https://www.twitter.com" target="_blank">Link 3</a>
+</div>
+
+<script>
+function toggleLinks(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none" || element.style.display === "") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

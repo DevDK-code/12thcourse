@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 12 English Grammar</title>
+  <link rel="stylesheet" href="3.css" />
+</head>
+<body>
+  <div class="header">
+    Class 12 English Grammar
+    <button class="home-btn" onclick="window.location.href='12.html'">Home</button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-type="all">All</div>
+    <div class="tab" data-type="video">Video</div>
+    <div class="tab" data-type="pdf">PDF</div>
+  </div>
+
+  <div class="content" id="content"></div>
+
+  <div class="add-btn">+</div>
+  <script src="3.js"></script>
+
+  <!-- ======================================================
+       YAHAN SEEDHA LINKS PASTE KARO — koi quotes/comma nahi
+       Naya video add karna ho to bas neeche ek line aur likh do
+       ====================================================== -->
+  <textarea id="DATA" style="display:none">
+On The Face Of It Class 12 in Hindi | On The Face Of It Class 12 Chapter 5 #ekaksha - https://www.youtube.com/watch?v=c2pcIWPSlEY             
+On The Face Of It Class 12 in Hindi | On The Face Of It Class 12 Chapter 5 #ekaksha - https://www.youtube.com/watch?v=6DwzeYyLJIM             
+On The Face Of It Class 12 in Hindi | On The Face Of It Class 12 Chapter 5 #ekaksha - https://www.youtube.com/watch?v=Y9AJHbjCSUY
+  </textarea>
+
+  <script>
+    function getVideoId(url) {
+      const m = url.match(/(?:v=|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+      return m ? m[1] : null;
+    }
+
+    const content = document.getElementById('content');
+    const lines = document.getElementById('DATA').value.trim().split('\n');
+
+    lines.forEach(line => {
+      line = line.trim();
+      if (!line) return;
+      const urlMatch = line.match(/https?:\/\/[^\s]+/);
+      if (!urlMatch) return;
+      const url = urlMatch[0];
+      const videoId = getVideoId(url);
+      if (!videoId) return;
+      const title = line.replace(url, '').replace(/-\s*$/, '').trim();
+      const thumb = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+      const encoded = encodeURIComponent(url);
+
+      content.innerHTML += `
+        <div class="item" data-type="video" data-url="${url}">
+          <div class="main-content">
+            <div class="item-header">
+              <img src="${thumb}" alt="Thumbnail">
+              <div class="item-title">${title}</div>
+            </div>
+            <div class="actions">
+              <button class="btn watch" onclick="window.location.href='dkplayer.html?url=${encoded}'">Watch</button>
+              <button class="btn listen">Listen</button>
+              <button class="btn share">Share</button>
+            </div>
+          </div>
+          <div class="side-actions">
+            <button class="btn download">Download</button>
+            <button class="btn bookmark">Bookmark</button>
+          </div>
+        </div>`;
+    });
+  </script>
+
+</body>
+</html>

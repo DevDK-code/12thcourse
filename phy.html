@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>physics</title>
+  <link rel="stylesheet" href="x.css">
+</head>
+<body>
+
+  <div class="header">
+    physics
+    <button class="home-btn" onclick="window.location.href='12.html'">Home</button>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" data-type="all">All</div>
+    <div class="tab" data-type="video">Video</div>
+    <div class="tab" data-type="pdf">PDF</div>
+  </div>
+
+  <div class="content" id="content"></div>
+
+  <div class="add-btn">+</div>
+
+  <!-- Video links yahan daalo -->
+  <textarea id="DATA" style="display:none">FUNDAMENTALS OF PHYSICS | PART 1 | FUNDAMENTAL UNITS AND COMPLEMENTARY UNITS - https://www.youtube.com/watch?v=xyXPPnxVOMI
+FUNDAMENTAL OF PHYSICS IN HINDI | VECTOR PRODUCT - https://www.youtube.com/watch?v=Cq_X3ZI_IpE
+Class 12 Physics Chapter 1 Electric Charge And Field UP Board Hindi Medium Sushil Sir 2023 - https://www.youtube.com/watch?v=tUfqJGmLKJw
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-2 - https://www.youtube.com/watch?v=CsFh78wdGj0
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-3 - https://www.youtube.com/watch?v=r4qcn3zES0c
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-4 - https://www.youtube.com/watch?v=Xq6T5rsoBwE
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-5 - https://www.youtube.com/watch?v=Tk3FHRGrcsI
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-6 - https://www.youtube.com/watch?v=T2ukAhY80UY
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-7 - https://www.youtube.com/watch?v=J6-aIHvD8oQ
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-7 - https://www.youtube.com/watch?v=J6-aIHvD8oQ
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-8 - https://www.youtube.com/watch?v=amKjuYaCTrk
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-8 - https://www.youtube.com/watch?v=amKjuYaCTrk
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-9 - https://www.youtube.com/watch?v=ZlmlGs-Lr0g
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-9 - https://www.youtube.com/watch?v=ZlmlGs-Lr0g
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-10 - https://www.youtube.com/watch?v=IknfMbzUnXQ
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-10 - https://www.youtube.com/watch?v=IknfMbzUnXQ
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-11 - https://www.youtube.com/watch?v=jg05LOVJDu8
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-12 - https://www.youtube.com/watch?v=beTTY5dHIbM
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-13 - https://www.youtube.com/watch?v=AoNvOEHX670
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-14 - https://www.youtube.com/watch?v=hYcNhJuaQbY
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-15 - https://www.youtube.com/watch?v=Le53z-L55gM
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-16 - https://www.youtube.com/watch?v=QNve_W5bDQc
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-17 - https://www.youtube.com/watch?v=bx1LBgRQMgY
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-18 - https://www.youtube.com/watch?v=2Ggoq6LJ-OM
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-18 - https://www.youtube.com/watch?v=2Ggoq6LJ-OM
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-19 - https://www.youtube.com/watch?v=WrSrSrNFaJM
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTRIC CHARGE AND FIELD |CH-1 L-23 - https://www.youtube.com/watch?v=-YnoW-ie6N8
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-1 - https://www.youtube.com/watch?v=abUXrhzrRrk
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-2 - https://www.youtube.com/watch?v=gAhoV-pXUJo
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-4 - https://www.youtube.com/watch?v=eBGUYbEQdYA
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-5 - https://www.youtube.com/watch?v=bQIWWdIQKmg
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-5 - https://www.youtube.com/watch?v=bQIWWdIQKmg
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-8 - https://www.youtube.com/watch?v=6QsKjywrEOQ
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-8 - https://www.youtube.com/watch?v=6QsKjywrEOQ
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-9 - https://www.youtube.com/watch?v=vp2TVCo_ciM
+12 PHYSICS IN HINDI | NCERT CLASS 12 PHYSICS | ELECTROSTATIC POTENTIAL AND CAPACITANCE | CH-2 L-11 - https://www.youtube.com/watch?v=SkOPOvZfSSE
+समान्तर प्लेट संधारित्र | CBSE class 12 physics | hindi medium | by DR.Sushil - https://www.youtube.com/watch?v=AvGAq4b9FBU
+संघारित्रों का संयोजन | NCERT class 12 physics | hindi medium | by DR.Sushil - https://www.youtube.com/watch?v=SjcJ0t05zDA
+वान डे ग्राफ जनित्र | CBSE class 12 physics | hindi medium | by DR.Sushil - https://www.youtube.com/watch?v=Ke8PUhaXNfg
+विद्युत् धारा | CBSE class 12 physics | hindi medium | by DR.Sushil - https://www.youtube.com/watch?v=IrXGaenZMoQ
+ओम का नियम | NCERT class 12 physics | hindi medium | by DR.Sushil - https://www.youtube.com/watch?v=3mBzezdJtlM
+ओम के नियम की सीमायें | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=JFgo9ocvDc4
+प्रतिरोधकता की ताप पर निर्भरता | NCERT class 12 physics | hindi medium | iit/jee/neet |by DR.Sushil - https://www.youtube.com/watch?v=NkBWMd63ZsU
+प्रतिरोधकता की ताप पर निर्भरता | NCERT class 12 physics | hindi medium | iit/jee/neet |by DR.Sushil - https://www.youtube.com/watch?v=NkBWMd63ZsU
+विद्युत ऊर्जा तथा शक्ति | NCERT class 12 physics | hindi medium | iit/jee/neet |by DR.Sushil - https://www.youtube.com/watch?v=8n9YPl_oYi8
+विद्युत ऊर्जा तथा शक्ति | NCERT class 12 physics | hindi medium | iit/jee/neet |by DR.Sushil - https://www.youtube.com/watch?v=8n9YPl_oYi8
+सेलो का संयोजन | NCERT class 12 physics | hindi medium | iit/jee/neet | by Dr. Sushil - https://www.youtube.com/watch?v=TMaOjnZWTWs
+सेलो का संयोजन | NCERT class 12 physics | hindi medium | iit/jee/neet | by Dr. Sushil - https://www.youtube.com/watch?v=TMaOjnZWTWs
+किरचॉफ के नियम | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=ULOVuTxya6k
+किरचॉफ के नियम | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=ULOVuTxya6k
+परिचय चुंबकीय बल | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=_kRNgqeEJ4Y
+चुंबकीय क्षेत्र और लोरेंत्ज़ बल | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushi - https://www.youtube.com/watch?v=HiEXE8fWVak
+संयुक्त विद्युत तथा चुंबकीय क्षेत्रों में गति (साइक्लोट्रॉन) | NCERT class 12 physics | hindi medium - https://www.youtube.com/watch?v=UV2DcrAQYTY
+संयुक्त विद्युत तथा चुंबकीय क्षेत्रों में गति (साइक्लोट्रॉन) | NCERT class 12 physics | hindi medium - https://www.youtube.com/watch?v=UV2DcrAQYTY
+बायो-सावर्ट नियम | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=SmIwlrH89UI
+बायो-सावर्ट नियम | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=SmIwlrH89UI
+बायो-सावर्ट नियम | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=SmIwlrH89UI
+Numerical Questions | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=IQLk01ag0Vc
+Numerical Questions | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=IQLk01ag0Vc
+परिनालिका तथा टोरॉइड | NCERT class 12 physics chapter 4 | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=u3YHtSG1IZU
+परिनालिका तथा टोरॉइड | NCERT class 12 physics chapter 4 | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=u3YHtSG1IZU
+दो समांतर विद्युत धाराओं के बीच बल-ऐम्पियर | NCERT class 12 physics chapter 4 | hindi - https://www.youtube.com/watch?v=ceweiU0Fs6E
+Numerical Questions | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=Goznzq6r3cQ
+चल कुडली गैल्वेनोमीटर | NCERT class 12 physics chapter 4 | hindi medium | iit/jee/neet| by DR.Sushil - https://www.youtube.com/watch?v=IERYVRQ8qss
+चल कुडली गैल्वेनोमीटर | NCERT class 12 physics chapter 4 | hindi medium | iit/jee/neet| by DR.Sushil - https://www.youtube.com/watch?v=IERYVRQ8qss
+चल कुडली गैल्वेनोमीटर | NCERT class 12 physics chapter 4 | hindi medium | iit/jee/neet| by DR.Sushil - https://www.youtube.com/watch?v=OuKuneKTHBo
+चल कुडली गैल्वेनोमीटर | NCERT class 12 physics chapter 4 | hindi medium | iit/jee/neet| by DR.Sushil - https://www.youtube.com/watch?v=OuKuneKTHBo
+MENTI QUIZ ON CHAPTER 4 | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=03RUnBsbWeE
+MENTI QUIZ ON CHAPTER 4 | NCERT class 12 physics | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=03RUnBsbWeE
+चुंबकीय क्षेत्र रेखाएँ | NCERT class 12 physics chapter 5 |hindi medium |iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=RE-mhOU0R7w
+एक समान चुंबकीय क्षेत्र मे द्विध्रुव | NCERT class 12 physics chapter 5 |hindi medium |iit/jee/neet - https://www.youtube.com/watch?v=KaOHtFGvu5k
+स्थिर वैद्युत अनुरूप | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=qm2UEoBmrxY
+स्थिर वैद्युत अनुरूप | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=qm2UEoBmrxY
+चुंबकत्व एवं गाउस नियम | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet - https://www.youtube.com/watch?v=PPByCJeD2ls
+चुंबकत्व एवं गाउस नियम | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet - https://www.youtube.com/watch?v=PPByCJeD2ls
+चुंबकीय दिक्पात एवं नति कोण | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet | - https://www.youtube.com/watch?v=Pci2Ga0_5Cc
+चुंबकीय दिक्पात एवं नति कोण | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet | - https://www.youtube.com/watch?v=Pci2Ga0_5Cc
+लौह चुंबकत्व | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet | by DR.Sushil - https://www.youtube.com/watch?v=cCfIBHolI3U
+छड़ चुंबक एक धारावाही परिनालिका | NCERT class 12 physics chapter 5 | hindi medium | iit/jee/neet - https://www.youtube.com/watch?v=Xj4m8KtAKlE
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 01 - https://www.youtube.com/watch?v=GXD2XRCxHaY
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 02 - https://www.youtube.com/watch?v=SnuWG1JeeU0
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 03 - https://www.youtube.com/watch?v=PI7KnkY9tXM
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 03 - https://www.youtube.com/watch?v=PI7KnkY9tXM
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 03 - https://www.youtube.com/watch?v=PI7KnkY9tXM
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 04 - https://www.youtube.com/watch?v=0x1JYXRirNU
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 05 - https://www.youtube.com/watch?v=04-nnjfT69E
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 04 - https://www.youtube.com/watch?v=0x1JYXRirNU
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 06 - https://www.youtube.com/watch?v=1qXF-WmOULA
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 07 - https://www.youtube.com/watch?v=3D2fz64xyRE
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTRO MAGNETIC INDUCTION| Chapter 6 Part 08 - https://www.youtube.com/watch?v=NEZG9SDBI2Y
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 01 - https://www.youtube.com/watch?v=HRO-tj7U9Ps
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 02 - https://www.youtube.com/watch?v=exLvHZKV_gM
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 03 - https://www.youtube.com/watch?v=KV0Q6Dvndjk
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 03 - https://www.youtube.com/watch?v=KV0Q6Dvndjk
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 04 - https://www.youtube.com/watch?v=K--tbR3xRxk
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 04 - https://www.youtube.com/watch?v=K--tbR3xRxk
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 04 - https://www.youtube.com/watch?v=K--tbR3xRxk
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 05 - https://www.youtube.com/watch?v=JXJzMPMjt8A
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 06 - https://www.youtube.com/watch?v=oXZB3dCIB80
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 06 - https://www.youtube.com/watch?v=oXZB3dCIB80
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 07 - https://www.youtube.com/watch?v=0At1CJIG3Ok
+12 Physics in Hindi| NCERT Class 12 Physics|ELECTROMAGNETIC WAVES| Chapter 8 Part 07 - https://www.youtube.com/watch?v=0At1CJIG3Ok
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 01 - https://www.youtube.com/watch?v=4906ev2X55Q
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 02 - https://www.youtube.com/watch?v=mlbgXYSrrP8
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 03 - https://www.youtube.com/watch?v=2zXz-UOzOvo
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 03 - https://www.youtube.com/watch?v=2zXz-UOzOvo
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 04 - https://www.youtube.com/watch?v=hJ1Lb5qDEYE
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 05 - https://www.youtube.com/watch?v=C-dTRUS2rvE
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 06 - https://www.youtube.com/watch?v=vX-_FjIR1Xo
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 07 - https://www.youtube.com/watch?v=FqJPXpPtqsE
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 09 - https://www.youtube.com/watch?v=ycP3pKpTToQ
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 08 - https://www.youtube.com/watch?v=bO4dQNBaBas
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 10 - https://www.youtube.com/watch?v=BD7PXvJXLd8
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 11 - https://www.youtube.com/watch?v=66B0Js1t4mI
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 12 - https://www.youtube.com/watch?v=u8diF7LJgrw
+12 Physics in Hindi|NCERT Class 12 Physics|DUEL NATURE OF MATTER & RADIATION|Chapter 11 Part 12 - https://www.youtube.com/watch?v=u8diF7LJgrw
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 01 - https://www.youtube.com/watch?v=NiRJhFD5iHU
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 02 - https://www.youtube.com/watch?v=Thx6yyBYyrE
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 03 - https://www.youtube.com/watch?v=mVroxvqxC2g
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 03 - https://www.youtube.com/watch?v=mVroxvqxC2g
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 04 - https://www.youtube.com/watch?v=Z_y0y7fqnjA
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 05 - https://www.youtube.com/watch?v=tyNakZ09PLw
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 06 - https://www.youtube.com/watch?v=-gkqHLGUZz0
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 07 - https://www.youtube.com/watch?v=JX5cp-nmjyo
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 09 - https://www.youtube.com/watch?v=DJGKrV6jQec
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 10 - https://www.youtube.com/watch?v=Tnn4npuE1BM
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 11 - https://www.youtube.com/watch?v=KPBtH12x4t0
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 12 - https://www.youtube.com/watch?v=IUQ6HECXx5w
+12 Physics in Hindi|NCERT Class 12 Physics| ATOM |Chapter 12 Part 08 - https://www.youtube.com/watch?v=gsUDooUyzso
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 01 - https://www.youtube.com/watch?v=q5dHpoJ_KV4
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 02 - https://www.youtube.com/watch?v=zzcuAQfOVf8
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 03 - https://www.youtube.com/watch?v=4P2cavvd4xc
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 04 - https://www.youtube.com/watch?v=2KLW4ZuRauY
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 04 - https://www.youtube.com/watch?v=2KLW4ZuRauY
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 05 - https://www.youtube.com/watch?v=6YB8XY8C7js
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 06 - https://www.youtube.com/watch?v=QvOD_e_Sjz8
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 07 - https://www.youtube.com/watch?v=5a6aW-qv4U0
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 07 - https://www.youtube.com/watch?v=5a6aW-qv4U0
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 08 - https://www.youtube.com/watch?v=SxW4xgH3OWI
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 09 - https://www.youtube.com/watch?v=YKi0JD0ym6U
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 10 - https://www.youtube.com/watch?v=3h-oPnSAPKM
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 10 - https://www.youtube.com/watch?v=3h-oPnSAPKM
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 11 - https://www.youtube.com/watch?v=c6uuCY0uqQM
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 11 - https://www.youtube.com/watch?v=c6uuCY0uqQM
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 12 - https://www.youtube.com/watch?v=KbL0VDDBj3Q
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 13 - https://www.youtube.com/watch?v=If2qJ-3V6gQ
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 14 - https://www.youtube.com/watch?v=6SZxckdBv-k
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 15 - https://www.youtube.com/watch?v=kDU5Ip8siLg
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 16 - https://www.youtube.com/watch?v=K_moFBF3wsk
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 17 - https://www.youtube.com/watch?v=EMtIt-5yfbg
+12 Physics in Hindi|NCERT Class 12 Physics| NUCLEUS |Chapter 13 Part 17 - https://www.youtube.com/watch?v=EMtIt-5yfbg
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 01 - https://www.youtube.com/watch?v=EzswLNrSmlg
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 02 - https://www.youtube.com/watch?v=ZokODN4-z48
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 03 - https://www.youtube.com/watch?v=mCFF1rdAi5c
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 04 - https://www.youtube.com/watch?v=NBRPyzq4itY
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 05 - https://www.youtube.com/watch?v=2PhzHNvzcG8
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 06 - https://www.youtube.com/watch?v=raNz3fpUQk0
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 07 - https://www.youtube.com/watch?v=sCinFlZltfM
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 08 - https://www.youtube.com/watch?v=UmE5L2tRsns
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 09 - https://www.youtube.com/watch?v=kkTvgxxboF4
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 10 - https://www.youtube.com/watch?v=nW-myuQDtbQ
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 11-2 - https://www.youtube.com/watch?v=uAh0AUdHRIc
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 12 - https://www.youtube.com/watch?v=fgLtEq6O1t8
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 13 - https://www.youtube.com/watch?v=lwb4JN_E8Xo
+12 Physics in Hindi| NCERT Class 12 Physics|ALTERNATING CURRENT| Chapter 7 Part 14 - https://www.youtube.com/watch?v=bXY2Elu9Mw8
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 01 - https://www.youtube.com/watch?v=6EgxDrqIO7Q
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 02 - https://www.youtube.com/watch?v=iKt2a2yJujc
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 03 - https://www.youtube.com/watch?v=hhpMhIfshRo
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 04 - https://www.youtube.com/watch?v=4OC2QUJs0yg
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 05 - https://www.youtube.com/watch?v=WX5UynWG18c
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 06 - https://www.youtube.com/watch?v=HoQ2OgtwRG0
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 07 - https://www.youtube.com/watch?v=hD0q9wfrkFk
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 08 - https://www.youtube.com/watch?v=74y8GeYHHmI
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 09 - https://www.youtube.com/watch?v=5Ws7rSw1Rgg
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 10 - https://www.youtube.com/watch?v=HaT8j0ZUleg
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 11 - https://www.youtube.com/watch?v=H70mSSmHyEQ
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 12 - https://www.youtube.com/watch?v=l6UDb9bBXP4
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 13 - https://www.youtube.com/watch?v=cFWp1Ew5TrU
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 15 - https://www.youtube.com/watch?v=rtlTcXVcmUY
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 14 - https://www.youtube.com/watch?v=7eKsFQh9KT8
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 16 - https://www.youtube.com/watch?v=CqAQS7zlQs8
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 17 - https://www.youtube.com/watch?v=qvgLWvXbVxc
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 18 - https://www.youtube.com/watch?v=gNi4ZWSN7gw
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 19 - https://www.youtube.com/watch?v=YvuezS3444c
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 20 - https://www.youtube.com/watch?v=n1VPvNLd6nQ
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 20 - https://www.youtube.com/watch?v=n1VPvNLd6nQ
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 21 - https://www.youtube.com/watch?v=E2tfZXGspnE
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 22 - https://www.youtube.com/watch?v=zIztImBmUUs
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 23 - https://www.youtube.com/watch?v=Knd5_5oMc74
+12 Physics in Hindi| NCERT Class 12 Physics|RAY OPTICS & OPTICAL INSTRUMENTS| Chapter 9 Part 24 - https://www.youtube.com/watch?v=Z1d7rKYETNI
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 01 - https://www.youtube.com/watch?v=xIMpI2YtvuQ
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 02 - https://www.youtube.com/watch?v=kG_VWcsyXlU
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 03 - https://www.youtube.com/watch?v=qrj08D91myg
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 04 - https://www.youtube.com/watch?v=vH266v5KqRw
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 05 - https://www.youtube.com/watch?v=dtklfdylhN0
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 06 - https://www.youtube.com/watch?v=UPqH7QSaFbs
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 07 - https://www.youtube.com/watch?v=1W34wMOi6Zk
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 08 - https://www.youtube.com/watch?v=XV3AmgTwqBE
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 09 - https://www.youtube.com/watch?v=4UWiGtim3mQ
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 10 - https://www.youtube.com/watch?v=JtsOOIvKIEI
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 11 - https://www.youtube.com/watch?v=gqRu47t2TLQ
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 12 - https://www.youtube.com/watch?v=M2NjLc2h2LI
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 13 - https://www.youtube.com/watch?v=sf0_AB-nL6U
+12 Physics in Hindi| NCERT Class 12 Physics| WAVE OPTICS | Chapter 10 Part 14 - https://www.youtube.com/watch?v=OtYKDbVlA7k
+</textarea>
+
+  <!-- PDF links yahan daalo -->
+  <textarea id="PDF_DATA" style="display:none">Exam Fighter physics.pdf - https://drive.google.com/file/d/1LqFqOAiScK5dJGdAMWwngS6F2dkdqCtv/view?usp=drivesdk
+physics pyq - https://drive.google.com/file/d/1xaw8r7VhsjR59eD5tCWfbk1BNrs6FYUs/view?usp=drivesdk
+शेखावाटी मिशन 100 - https://drive.google.com/file/d/1xacCpWr384RBxOr_B-FYckuTqeY_jK8p/view?usp=drivesdk
+RCSCE प्रश्न बैंक कक्षा 12 भौतिक विज्ञान - https://drive.google.com/file/d/1xY98mj1clyhgm6ghv7nwwlc8Cn1yZHb6/view?usp=drivesdk
+Semiconductor - https://drive.google.com/file/d/1QQz8nUhzqferUo_2_oyI-IsqOCqGSKyN/view?usp=drivesdk
+</textarea>
+
+  <script src="x.js"></script>
+
+</body>
+</html>
